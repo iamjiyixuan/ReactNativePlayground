@@ -1,2 +1,12 @@
+# Node
 /node_modules
+
+# Xcode
 /ios/Pods
+
+# Android
+android/**/build/
+android/.idea
+android/.gradle
+android/local.properties
+android/**/*.iml
