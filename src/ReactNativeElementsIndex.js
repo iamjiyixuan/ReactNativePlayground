@@ -11,11 +11,19 @@ class ReactNativeElementsIndex extends React.Component {
         return (
             <View style={styles.bg}>
                 <Button
-  raised
-  icon={{name: 'home', size: 32}}
-  buttonStyle={{backgroundColor: 'red', borderRadius: 10}}
-  textStyle={{textAlign: 'center'}}
-  title={`Welcome to\nReact Native Elements`} />
+                    raised
+                    icon={{
+                    name: 'home',
+                    size: 32
+                }}
+                    buttonStyle={{
+                    backgroundColor: 'red',
+                    borderRadius: 10
+                }}
+                    textStyle={{
+                    textAlign: 'center'
+                }}
+                    title={`Welcome to\nReact Native Elements`}/>
             </View>
         );
     }
