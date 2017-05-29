@@ -12,6 +12,7 @@ import {StackNavigator} from 'react-navigation';
 import HelloWorld from './HelloWorld'
 import ActivityIndicatorDemo from './ActivityIndicatorDemo'
 import ButtonDemo from './ButtonDemo'
+import ReactNativeElementsIndex from './ReactNativeElementsIndex'
 import Contacts from './Contacts'
 import EnterpriseAddressbook from './EnterpriseAddressbook'
 import News from './News'
@@ -37,6 +38,9 @@ class Index extends React.Component {
         }, {
           'id': 'ButtonDemo',
           'title': 'Button Demo'
+        }, {
+          'id': 'ReactNativeElementsIndex',
+          'title': 'React Native Elements'
         }, {
           'id': 'Contacts',
           'title': 'Contacts'
@@ -105,6 +109,9 @@ const ReactNativePlayground = StackNavigator({
   },
   ButtonDemo: {
     screen: ButtonDemo
+  },
+  ReactNativeElementsIndex: {
+    screen: ReactNativeElementsIndex
   },
   Contacts: {
     screen: Contacts
