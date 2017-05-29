@@ -115,7 +115,7 @@ class Contacts extends React.Component {
                 <Image
                     style={styles.avatar}
                     source={{
-                    uri: 'https://facebook.github.io/react/img/logo_og.png'
+                    uri: 'https://avatars2.githubusercontent.com/u/6269028?v=3&s=100'
                 }}/>
                 <Text style={styles.nameText}>{rowData.name}</Text>
             </TouchableOpacity>

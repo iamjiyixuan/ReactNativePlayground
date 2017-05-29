@@ -14,6 +14,7 @@ import ActivityIndicatorDemo from './ActivityIndicatorDemo'
 import ButtonDemo from './ButtonDemo'
 import Contacts from './Contacts'
 import EnterpriseAddressbook from './EnterpriseAddressbook'
+import News from './News'
 
 class Index extends React.Component {
   static navigationOptions = {
@@ -39,6 +40,9 @@ class Index extends React.Component {
         }, {
           'id': 'Contacts',
           'title': 'Contacts'
+        }, {
+          'id': 'News',
+          'title': 'News'
         }
       ])
     };
@@ -107,6 +111,9 @@ const ReactNativePlayground = StackNavigator({
   },
   EnterpriseAddressbook: {
     screen: EnterpriseAddressbook
+  },
+  News: {
+    screen: News
   }
 });
 
