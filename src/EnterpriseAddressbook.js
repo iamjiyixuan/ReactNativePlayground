@@ -1,5 +1,12 @@
 import React from 'react';
-import {AppRegistry, StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import {
+    AppRegistry,
+    StyleSheet,
+    View,
+    Text,
+    Image,
+    TouchableOpacity
+} from 'react-native';
 
 class EnterpriseAddressbook extends React.Component {
     static navigationOptions = {
@@ -16,16 +23,26 @@ class EnterpriseAddressbook extends React.Component {
     render() {
         const data = [
             {
-                text: 'Javascript',
+                text: '研发部',
+                type: 'folder',
                 data: [
                     {
-                        text: '1'
+                        text: '1',
+                        type: 'item'
+                    }, {
+                        text: '2',
+                        type: 'item'
+                    }, {
+                        text: '3',
+                        type: 'item'
                     }
                 ]
             }, {
-                text: 'Java'
+                text: '销售部',
+                type: 'folder'
             }, {
-                text: 'PHP'
+                text: '客服部',
+                type: 'folder'
             }
         ];
         return (
@@ -44,28 +61,45 @@ class EnterpriseAddressbook extends React.Component {
     }
 
     _getNode(type, i, node) {
+        console.log(i + ' ' + node.type + ' ' + node.text);
         const {collapsed} = this.state;
         const {renderItem} = this.props;
         const hasChildren = !!node.data;
-        return (
-            <View key={i} style={this._getStyle(type, 'node')}>
-                <TouchableOpacity onPress={() => this._toggleState.bind(this)(type, i, node)}>
-                    {renderItem
-                        ? renderItem(type, i, node)
-                        : this._getNodeView(type, i, node)}
-                </TouchableOpacity>
-                <View style={styles.children}>
-                    {collapsed[type + i]
-                        ? null
-                        : this._getTree('children', node.data || [])}
+        if (node.type === 'folder') {
+            return (
+                <View key={i} style={this._getStyle(type, 'node')}>
+                    <TouchableOpacity onPress={() => this._toggleState.bind(this)(type, i, node)}>
+                        {renderItem
+                            ? renderItem(type, i, node)
+                            : this._getNodeView(type, i, node)}
+                    </TouchableOpacity>
+                    <View style={styles.children}>
+                        {collapsed[type + i]
+                            ? null
+                            : this._getTree('children', node.data || [])}
+                    </View>
                 </View>
-            </View>
-        );
+            );
+        } else {
+            return (
+                <View style={styles.contact}>
+                    <Image
+                        style={styles.avatar}
+                        source={{
+                        uri: 'https://avatars2.githubusercontent.com/u/6269028?v=3&s=100'
+                    }}/>
+                    <Text style={styles.contactName}>{node.text}</Text>
+                </View>
+            );
+        }
+
     }
 
     _getNodeView(type, i, node) {
         const {collapsed} = this.state;
-        const iconSize = (type == 'root' ? 16 : 14);
+        const iconSize = (type == 'root'
+            ? 16
+            : 14);
         const hasChildren = !!node.data
         const icon = node.icon
             ? node.icon
@@ -102,6 +136,7 @@ class EnterpriseAddressbook extends React.Component {
 // 样式
 var styles = StyleSheet.create({
     tree: {
+        backgroundColor: 'white',
         padding: 10
     },
     rootnode: {
@@ -114,7 +149,7 @@ var styles = StyleSheet.create({
         flexDirection: 'row'
     },
     children: {
-        paddingLeft: 20
+        paddingLeft: 10
     },
     icon: {
         paddingRight: 10,
@@ -123,6 +158,20 @@ var styles = StyleSheet.create({
     },
     roottext: {
         fontSize: 18
+    },
+    contact: {
+        height: 50,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    contactName: {
+        marginLeft: 10
+    },
+    avatar: {
+        width: 30,
+        height: 30,
+        borderRadius: 15,
+        marginLeft: 10
     }
 });
 
