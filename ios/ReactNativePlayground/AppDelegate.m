@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-// 3rd
-#import <React/RCTRootView.h>
-#import <React/RCTBundleURLProvider.h>
+
 
 @interface AppDelegate ()
 
@@ -19,19 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"src/index" fallbackResource:nil];
-//    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
-    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName:@"ReactNativePlayground"
-                                                 initialProperties:nil
-                                                     launchOptions:launchOptions];
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view = rootView;
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = vc;
-    [self.window makeKeyAndVisible];
-
     return YES;
 }
 

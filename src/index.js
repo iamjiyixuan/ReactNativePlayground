@@ -12,6 +12,7 @@ import {StackNavigator} from 'react-navigation';
 import HelloWorld from './HelloWorld'
 import ActivityIndicatorDemo from './ActivityIndicatorDemo'
 import ButtonDemo from './ButtonDemo'
+import Communication from './Communication'
 import ReactNativeElementsIndex from './ReactNativeElementsIndex'
 import Contacts from './Contacts'
 import EnterpriseAddressbook from './EnterpriseAddressbook'
@@ -39,6 +40,9 @@ class Index extends React.Component {
           'id': 'ButtonDemo',
           'title': 'Button Demo'
         }, {
+          'id': 'Communication',
+          'title': 'React Native 与 Native 通信'
+        }, {
           'id': 'ReactNativeElementsIndex',
           'title': 'React Native Elements'
         }, {
@@ -60,6 +64,7 @@ class Index extends React.Component {
 
   render() {
     const {navigate} = this.props.navigation;
+    console.log('navigation=' + this.props.navigation);
     return (<ListView dataSource={this.state.dataSource} renderRow={this._renderRow}/>);
   }
 
@@ -97,7 +102,7 @@ var styles = StyleSheet.create({
   }
 });
 
-const ReactNativePlayground = StackNavigator({
+const MyStackNavigator = StackNavigator({
   Index: {
     screen: Index
   },
@@ -109,6 +114,9 @@ const ReactNativePlayground = StackNavigator({
   },
   ButtonDemo: {
     screen: ButtonDemo
+  },
+  Communication: {
+    screen: Communication
   },
   ReactNativeElementsIndex: {
     screen: ReactNativeElementsIndex
@@ -123,5 +131,18 @@ const ReactNativePlayground = StackNavigator({
     screen: News
   }
 });
+
+class ReactNativePlayground extends React.Component {
+
+  constructor(props) {
+    super(props);
+    console.log('props.ttext = ' + props.ttext);
+  }
+
+  render() {
+    // return (<MyStackNavigator screenProps={this.props.ttext.name}/>);
+    return (<MyStackNavigator screenProps={'this.props.ttext.name'}/>);
+  }
+};
 
 AppRegistry.registerComponent('ReactNativePlayground', () => ReactNativePlayground);
