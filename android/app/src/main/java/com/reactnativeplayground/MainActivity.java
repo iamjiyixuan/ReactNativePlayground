@@ -28,7 +28,11 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
-        mReactRootView.startReactApplication(mReactInstanceManager, "ReactNativePlayground", null);
+        Bundle initialProps = new Bundle();
+        initialProps.putString("ttext", "text from android");
+        mReactRootView.startReactApplication(mReactInstanceManager, "ReactNativePlayground", initialProps);
+
+        initialProps.putString("ttext", "text from android2");
 
         setContentView(mReactRootView);
     }

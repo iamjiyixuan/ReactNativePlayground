@@ -140,8 +140,7 @@ class ReactNativePlayground extends React.Component {
   }
 
   render() {
-    // return (<MyStackNavigator screenProps={this.props.ttext.name}/>);
-    return (<MyStackNavigator screenProps={'this.props.ttext.name'}/>);
+    return (<MyStackNavigator screenProps={this.props.ttext}/>);
   }
 };
 
