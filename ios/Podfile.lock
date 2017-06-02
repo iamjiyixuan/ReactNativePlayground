@@ -25,7 +25,7 @@ PODS:
     - React/Core
   - React/RCTWebSocket (0.43.4):
     - React/Core
-  - RNVectorIcons (4.2.0):
+  - RNVectorIcons (4.1.1):
     - React
   - Yoga (0.43.4.React)
 
@@ -52,7 +52,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   React: 607aa7eb8b0e44b102f95f43fd49dc8aedefa93f
-  RNVectorIcons: 6d98d83e944d15014d8071dd9819beb094c61133
+  RNVectorIcons: bd2cc5c12b08b9150fd9333d201c213ca2c715b8
   Yoga: 2a70bc5ab41486a272b9fd5b76c482ba9268c5dd
 
 PODFILE CHECKSUM: ec80c2d091712ea6629eb3373ec8a2d2ed9cacdb

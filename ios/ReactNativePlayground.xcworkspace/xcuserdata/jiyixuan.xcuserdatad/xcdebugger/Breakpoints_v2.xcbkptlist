@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReactNativePlayground/ViewController.m"
-            timestampString = "518000850.751069"
+            timestampString = "518084303.494845"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "RCT_EXPORT_METHOD()"
-            landmarkType = "9">
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReactNativePlayground/ViewController.m"
-            timestampString = "518000850.751069"
+            timestampString = "518085613.413605"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-test:"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-onXyz:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

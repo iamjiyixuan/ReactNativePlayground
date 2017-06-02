@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestViewController.h"
 // 3rd
 #import <React/RCTRootView.h>
 #import <React/RCTBundleURLProvider.h>
@@ -26,8 +27,8 @@ RCT_EXPORT_MODULE();
 {
     [super viewDidLoad];
 
-    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"src/index" fallbackResource:nil];
-    //    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    //    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"src/index" fallbackResource:nil];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.79:8081/src/index.bundle?platform=ios"];
     NSDictionary *props = @{ @"ttext" : @"text from iOS" };
     self.rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                 moduleName:@"ReactNativePlayground"
@@ -35,11 +36,8 @@ RCT_EXPORT_MODULE();
                                              launchOptions:nil];
     self.rootView.frame = [UIScreen mainScreen].bounds;
     [self.view addSubview:self.rootView];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSDictionary *props = @{ @"ttext" : @"text from iOS 2" };
-        self.rootView.appProperties = props;
-    });
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onXyz:) name:@"xyz" object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,21 +51,22 @@ RCT_EXPORT_MODULE();
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(onClickButton:(NSString *)data)
+RCT_EXPORT_METHOD(onClickButton:(NSDictionary *)data)
 {
-    NSLog(@"");
-    [self test:data];
-    
-//    NSDictionary *props = @{ @"ttext" : @"text from iOS 3" };
-//    self.rootView.appProperties = props;
+    NSLog(@"%@", data);
+
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"xyz" object:data];
 }
 
-- (void)test:(NSString *)text
+
+
+- (void)onXyz:(NSNotification *)notification
 {
-    NSLog(@"");
-    
+    NSDictionary *data = notification.object;
+    NSString *name = [data valueForKey:@"name"];
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
-                                                                   message:@"This is an alert."
+                                                                   message:name
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault

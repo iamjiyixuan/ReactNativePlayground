@@ -16,6 +16,7 @@
 		56C308AB1EDA506000DE9E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C308A91EDA506000DE9E08 /* LaunchScreen.storyboard */; };
 		5D2B49751EDFE7A50061A6E9 /* RNTCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B49741EDFE7A50061A6E9 /* RNTCommunication.m */; };
 		5D2B49781EDFE9F20061A6E9 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B49771EDFE9F20061A6E9 /* CalendarManager.m */; };
+		5DEDC3771EE154AE00630D01 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEDC3761EE154AE00630D01 /* TestViewController.m */; };
 		961E2B3369EE9C2F45670CB8 /* libPods-ReactNativePlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C6828822ECE5CD1321F18 /* libPods-ReactNativePlayground.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		5D2B49741EDFE7A50061A6E9 /* RNTCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTCommunication.m; sourceTree = "<group>"; };
 		5D2B49761EDFE9F20061A6E9 /* CalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
 		5D2B49771EDFE9F20061A6E9 /* CalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
+		5DEDC3751EE154AE00630D01 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		5DEDC3761EE154AE00630D01 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		A909DF606C9395084FED49F6 /* Pods-ReactNativePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +94,8 @@
 				5D2B49771EDFE9F20061A6E9 /* CalendarManager.m */,
 				56C308A11EDA506000DE9E08 /* ViewController.h */,
 				56C308A21EDA506000DE9E08 /* ViewController.m */,
+				5DEDC3751EE154AE00630D01 /* TestViewController.h */,
+				5DEDC3761EE154AE00630D01 /* TestViewController.m */,
 				56C308A41EDA506000DE9E08 /* Main.storyboard */,
 				56C308A71EDA506000DE9E08 /* Assets.xcassets */,
 				56C308A91EDA506000DE9E08 /* LaunchScreen.storyboard */,
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEDC3771EE154AE00630D01 /* TestViewController.m in Sources */,
 				5D2B49781EDFE9F20061A6E9 /* CalendarManager.m in Sources */,
 				56C308A31EDA506000DE9E08 /* ViewController.m in Sources */,
 				56C308A01EDA506000DE9E08 /* AppDelegate.m in Sources */,

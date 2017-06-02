@@ -2,10 +2,12 @@ import React from 'react';
 import {
     AppRegistry,
     StyleSheet,
+    NativeModules,
     View,
     Text,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    ScrollView
 } from 'react-native';
 
 class EnterpriseAddressbook extends React.Component {
@@ -21,53 +23,35 @@ class EnterpriseAddressbook extends React.Component {
     }
 
     render() {
-        const data = [
-            {
-                text: '研发部',
-                type: 'folder',
-                data: [
-                    {
-                        text: '1',
-                        type: 'item'
-                    }, {
-                        text: '2',
-                        type: 'item'
-                    }, {
-                        text: '3',
-                        type: 'item'
-                    }
-                ]
-            }, {
-                text: '销售部',
-                type: 'folder'
-            }, {
-                text: '客服部',
-                type: 'folder'
-            }
-        ];
+        const data = require('./data.json');
         return (
-            <View style={styles.tree}>
-                {this._getTree('root', data)}
-            </View>
+            <ScrollView>
+                <View style={styles.tree}>
+                    {this._getTree('root', data)}
+                </View>
+            </ScrollView>
         );
     }
 
     _getTree(type, data) {
         const nodes = [];
         for (const i = 0; i < data.length; i++) {
-            nodes.push(this._getNode(type, i, data[i]))
+            nodes.push(this._getNode(type, data[i]))
         }
         return nodes;
     }
 
-    _getNode(type, i, node) {
-        console.log(i + ' ' + node.type + ' ' + node.text);
+    _getNode(type, node) {
         const {collapsed} = this.state;
         const {renderItem} = this.props;
         const hasChildren = !!node.data;
+        const i = node.id;
+        const jid = node.jid;
         if (node.type === 'folder') {
             return (
-                <View key={i} style={this._getStyle(type, 'node')}>
+                <View key={i} style={{
+                    paddingTop: 10
+                }}>
                     <TouchableOpacity onPress={() => this._toggleState.bind(this)(type, i, node)}>
                         {renderItem
                             ? renderItem(type, i, node)
@@ -82,14 +66,17 @@ class EnterpriseAddressbook extends React.Component {
             );
         } else {
             return (
-                <View style={styles.contact}>
+                <TouchableOpacity
+                    key={jid}
+                    style={styles.contact}
+                    onPress={() => this._onPressXCard(node)}>
                     <Image
                         style={styles.avatar}
                         source={{
                         uri: 'https://avatars2.githubusercontent.com/u/6269028?v=3&s=100'
                     }}/>
-                    <Text style={styles.contactName}>{node.text}</Text>
-                </View>
+                    <Text style={styles.contactName}>{node.name}</Text>
+                </TouchableOpacity>
             );
         }
 
@@ -97,19 +84,26 @@ class EnterpriseAddressbook extends React.Component {
 
     _getNodeView(type, i, node) {
         const {collapsed} = this.state;
-        const iconSize = (type == 'root'
-            ? 16
-            : 14);
-        const hasChildren = !!node.data
-        const icon = node.icon
-            ? node.icon
-            : (collapsed[type + i]
-                ? 'chevron-right'
-                : 'keyboard-arrow-down')
+        const hasChildren = !!node.data;
+        const iconStyle = collapsed[type + i]
+            ? styles.iconX
+            : styles.iconY;
+        const icon = collapsed[type + i]
+            ? require('../img/icon_folder_close.png')
+            : require('../img/icon_folder_open.png');
         return (
-            <View style={this._getStyle(type, 'item')}>
-                <Text style={this._getStyle(type, 'text')}>
-                    {node.text}
+            <View
+                style={{
+                flexDirection: 'row',
+                alignItems: 'center'
+            }}>
+                <Image style={iconStyle} source={icon}/>
+                <Text
+                    style={{
+                    fontSize: 18,
+                    color: '#3E3E3E'
+                }}>
+                    {node.name}
                 </Text>
             </View>
         );
@@ -131,6 +125,12 @@ class EnterpriseAddressbook extends React.Component {
             styles[type + tag]
         ]
     }
+
+    _onPressXCard(node) {
+        console.log('_onPressXCard ' + node);
+        var ViewController = NativeModules.ViewController;
+        ViewController.onClickButton(node);
+    }
 }
 
 // 样式
@@ -149,7 +149,7 @@ var styles = StyleSheet.create({
         flexDirection: 'row'
     },
     children: {
-        paddingLeft: 10
+        paddingLeft: 30
     },
     icon: {
         paddingRight: 10,
@@ -160,7 +160,7 @@ var styles = StyleSheet.create({
         fontSize: 18
     },
     contact: {
-        height: 50,
+        height: 40,
         flexDirection: 'row',
         alignItems: 'center'
     },
@@ -170,8 +170,17 @@ var styles = StyleSheet.create({
     avatar: {
         width: 30,
         height: 30,
-        borderRadius: 15,
-        marginLeft: 10
+        borderRadius: 15
+    },
+    iconX: {
+        width: 12,
+        height: 20,
+        marginRight: 10
+    },
+    iconY: {
+        width: 20,
+        height: 12,
+        marginRight: 10
     }
 });
 
