@@ -1,452 +1,674 @@
-[{
-  "id" : "addsbook_0000000007",
-  "data" : [
-    {
-      "type" : "xCard",
-      "name" : "涂杰",
-      "jid" : "18621333993@neegle.net"
-    },
-    {
-      "type" : "xCard",
-      "name" : "宋韬",
-      "jid" : "13311605550@neegle.net"
-    },
-    {
-      "id" : "addsbook_item_0000000541",
-      "data" : [
-        {
-          "type" : "xCard",
-          "name" : "谢睿琼",
-          "jid" : "13311883926@neegle.net"
-        },
-        {
-          "id" : "addsbook_item_0000000545",
-          "data" : [
-
-          ],
-          "type" : "folder",
-          "name" : "陆丽娟部"
-        },
-        {
-          "id" : "addsbook_item_0000000546",
-          "data" : [
-
-          ],
-          "type" : "folder",
-          "name" : "谢睿琼部"
-        }
-      ],
-      "type" : "folder",
-      "name" : "销售"
-    },
-    {
-      "id" : "addsbook_item_0000000542",
-      "data" : [
-
-      ],
-      "type" : "folder",
-      "name" : "不在岗人员"
-    },
-    {
-      "id" : "addsbook_item_0000000543",
-      "data" : [
-        {
-          "type" : "xCard",
-          "name" : "柳钧延",
-          "jid" : "13361950825@neegle.net"
-        },
-        {
-          "type" : "xCard",
-          "name" : "屠志伟",
-          "jid" : "13301899782@neegle.net"
-        },
-        {
-          "id" : "addsbook_item_0000000547",
-          "data" : [
-            {
-              "type" : "xCard",
-              "name" : "曹仪",
-              "jid" : "15001976311@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "曹懿",
-              "jid" : "18017675603@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "仇惠明",
-              "jid" : "13918241355@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "董玉敏",
-              "jid" : "13917541669@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "钱金亮",
-              "jid" : "13371824415@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "王彬",
-              "jid" : "13818733373@neegle.net"
-            }
-          ],
-          "type" : "folder",
-          "name" : "机房"
-        },
-        {
-          "id" : "addsbook_item_0000000548",
-          "data" : [
-            {
-              "type" : "xCard",
-              "name" : "江玉菡",
-              "jid" : "13501770790@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "王淑荣",
-              "jid" : "15001962790@neegle.net"
-            },
-            {
-              "id" : "addsbook_item_0000000551",
-              "data" : [
-                {
-                  "type" : "xCard",
-                  "name" : "刘磊",
-                  "jid" : "18017338399@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "袁梦云",
-                  "jid" : "13681726564@neegle.net"
-                }
-              ],
-              "type" : "folder",
-              "name" : "回访人员"
-            },
-            {
-              "id" : "addsbook_item_0000000552",
-              "data" : [
-                {
-                  "type" : "xCard",
-                  "name" : "陈照中",
-                  "jid" : "13918847894@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "过吉",
-                  "jid" : "15618778155@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "李健",
-                  "jid" : "18221395392@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "陆平",
-                  "jid" : "13917543616@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "陆文明",
-                  "jid" : "13795497787@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "沈晓阳",
-                  "jid" : "13661837341@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "唐倩",
-                  "jid" : "18616759641@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "汪之逸",
-                  "jid" : "17316375590@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "王栋",
-                  "jid" : "13611938521@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "王景亮",
-                  "jid" : "15216861812@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "徐伟",
-                  "jid" : "13301731785@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "赵周誉",
-                  "jid" : "15800383342@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "余菁",
-                  "jid" : "13817911600@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "胡建欣",
-                  "jid" : "13761035325@neegle.net"
-                }
-              ],
-              "type" : "folder",
-              "name" : "咨询"
-            }
-          ],
-          "type" : "folder",
-          "name" : "报税服务"
-        },
-        {
-          "id" : "addsbook_item_0000000549",
-          "data" : [
-            {
-              "type" : "xCard",
-              "name" : "邓博轩",
-              "jid" : "15270967796@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "江雪英",
-              "jid" : "13184568166@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "刘婷",
-              "jid" : "18607918621@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "罗卫梅",
-              "jid" : "13037209600@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "王爱华",
-              "jid" : "15079061789@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "吁永南",
-              "jid" : "13207080809@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "张艳艳",
-              "jid" : "13767053961@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "夏艳",
-              "jid" : "15270974160@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "徐仕尹",
-              "jid" : "18179155458@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "袁文",
-              "jid" : "13065165121@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "吁永南",
-              "jid" : "13207080809@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "吴芳",
-              "jid" : "13767150014@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "夏萌萌",
-              "jid" : "13047900899@neegle.net"
-            }
-          ],
-          "type" : "folder",
-          "name" : "江西分公司"
-        },
-        {
-          "id" : "addsbook_item_0000000550",
-          "data" : [
-            {
-              "type" : "xCard",
-              "name" : "安童",
-              "jid" : "13608565323@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "陈旭玮",
-              "jid" : "13368697939@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "董俐",
-              "jid" : "18508519463@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "蔡祖霖",
-              "jid" : "18984114737@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "蒋萍",
-              "jid" : "13984103281@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "钱艳玲",
-              "jid" : "13985525773@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "欧生春",
-              "jid" : "15086009137@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "袁凤琼",
-              "jid" : "18111976054@neegle.net"
-            }
-          ],
-          "type" : "folder",
-          "name" : "贵阳分公司"
-        }
-      ],
-      "type" : "folder",
-      "name" : "服务中心"
-    },
-    {
-      "id" : "addsbook_item_0000000544",
-      "data" : [
-        {
-          "id" : "addsbook_item_0000000553",
-          "data" : [
-            {
-              "type" : "xCard",
-              "name" : "曾玮",
-              "jid" : "13916836676@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "陈义",
-              "jid" : "15601877003@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "盘细平",
-              "jid" : "15921078567@neegle.net"
-            },
-            {
-              "id" : "addsbook_item_0000000556",
-              "data" : [
-                {
-                  "type" : "xCard",
-                  "name" : "计轶轩",
-                  "jid" : "18668073790@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "马加青",
-                  "jid" : "15221535755@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "梅小青",
-                  "jid" : "18602107867@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "陶冠华",
-                  "jid" : "15618348535@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "涂笑",
-                  "jid" : "18601753993@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "王文路",
-                  "jid" : "13120909452@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "王欣润",
-                  "jid" : "15221509827@neegle.net"
-                }
-              ],
-              "type" : "folder",
-              "name" : "软件研发"
-            },
-            {
-              "id" : "addsbook_item_0000000557",
-              "data" : [
-                {
-                  "type" : "xCard",
-                  "name" : "陶苑骋",
-                  "jid" : "13818366330@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "王斐斐",
-                  "jid" : "13681761749@neegle.net"
-                },
-                {
-                  "type" : "xCard",
-                  "name" : "吴林蔚",
-                  "jid" : "13621630339@neegle.net"
-                }
-              ],
-              "type" : "folder",
-              "name" : "软件测试"
-            }
-          ],
-          "type" : "folder",
-          "name" : "软件开发"
-        },
-        {
-          "id" : "addsbook_item_0000000554",
-          "data" : [
-            {
-              "type" : "xCard",
-              "name" : "陈莉萍",
-              "jid" : "13386082579@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "严跃红",
-              "jid" : "13671577489@neegle.net"
-            },
-            {
-              "type" : "xCard",
-              "name" : "姚莉萍",
-              "jid" : "13795266117@neegle.net"
-            }
-          ],
-          "type" : "folder",
-          "name" : "办公室"
-        }
-      ],
-      "type" : "folder",
-      "name" : "公司本部"
-    }
-  ],
-  "type" : "folder",
-  "name" : "神计信息"
-}]
+[
+  {
+    "id": "addsbook_0000000007",
+    "data": [
+      {
+        "id": "addsbook_item_0000000638",
+        "type": "xCard",
+        "name": "涂杰",
+        "jid": "18621333993@neegle.net"
+      },
+      {
+        "id": "addsbook_item_0000000630",
+        "type": "xCard",
+        "name": "宋韬",
+        "jid": "13311605550@neegle.net"
+      },
+      {
+        "id": "addsbook_item_0000000541",
+        "data": [
+          {
+            "id": "addsbook_item_0000000672",
+            "type": "xCard",
+            "name": "谢睿琼",
+            "jid": "13311883926@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000545",
+            "data": [],
+            "type": "folder",
+            "name": "陆丽娟部"
+          },
+          {
+            "id": "addsbook_item_0000000546",
+            "data": [],
+            "type": "folder",
+            "name": "谢睿琼部"
+          }
+        ],
+        "type": "folder",
+        "name": "销售"
+      },
+      {
+        "id": "addsbook_item_0000000542",
+        "data": [],
+        "type": "folder",
+        "name": "不在岗人员"
+      },
+      {
+        "id": "addsbook_item_0000000543",
+        "data": [
+          {
+            "id": "addsbook_item_0000000608",
+            "type": "xCard",
+            "name": "柳钧延",
+            "jid": "13361950825@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000642",
+            "type": "xCard",
+            "name": "屠志伟",
+            "jid": "13301899782@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000547",
+            "data": [
+              {
+                "id": "addsbook_item_0000000564",
+                "type": "xCard",
+                "name": "曹仪",
+                "jid": "15001976311@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000566",
+                "type": "xCard",
+                "name": "曹懿",
+                "jid": "18017675603@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000578",
+                "type": "xCard",
+                "name": "仇惠明",
+                "jid": "13918241355@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000586",
+                "type": "xCard",
+                "name": "董玉敏",
+                "jid": "13917541669@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000624",
+                "type": "xCard",
+                "name": "钱金亮",
+                "jid": "13371824415@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000648",
+                "type": "xCard",
+                "name": "王彬",
+                "jid": "13818733373@neegle.net"
+              }
+            ],
+            "type": "folder",
+            "name": "机房"
+          },
+          {
+            "id": "addsbook_item_0000000548",
+            "data": [
+              {
+                "id": "addsbook_item_0000000598",
+                "type": "xCard",
+                "name": "江玉菡",
+                "jid": "13501770790@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000660",
+                "type": "xCard",
+                "name": "王淑荣",
+                "jid": "15001962790@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000551",
+                "data": [
+                  {
+                    "id": "addsbook_item_0000000604",
+                    "type": "xCard",
+                    "name": "刘磊",
+                    "jid": "18017338399@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000684",
+                    "type": "xCard",
+                    "name": "袁梦云",
+                    "jid": "13681726564@neegle.net"
+                  }
+                ],
+                "type": "folder",
+                "name": "回访人员"
+              },
+              {
+                "id": "addsbook_item_0000000552",
+                "data": [
+                  {
+                    "id": "addsbook_item_0000000576",
+                    "type": "xCard",
+                    "name": "陈照中",
+                    "jid": "13918847894@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000588",
+                    "type": "xCard",
+                    "name": "过吉",
+                    "jid": "15618778155@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000602",
+                    "type": "xCard",
+                    "name": "李健",
+                    "jid": "18221395392@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000610",
+                    "type": "xCard",
+                    "name": "陆平",
+                    "jid": "13917543616@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000614",
+                    "type": "xCard",
+                    "name": "陆文明",
+                    "jid": "13795497787@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000628",
+                    "type": "xCard",
+                    "name": "沈晓阳",
+                    "jid": "13661837341@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000632",
+                    "type": "xCard",
+                    "name": "唐倩",
+                    "jid": "18616759641@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000644",
+                    "type": "xCard",
+                    "name": "汪之逸",
+                    "jid": "17316375590@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000650",
+                    "type": "xCard",
+                    "name": "王栋",
+                    "jid": "13611938521@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000656",
+                    "type": "xCard",
+                    "name": "王景亮",
+                    "jid": "15216861812@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000676",
+                    "type": "xCard",
+                    "name": "徐伟",
+                    "jid": "13301731785@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000711",
+                    "type": "xCard",
+                    "name": "赵周誉",
+                    "jid": "15800383342@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000976",
+                    "type": "xCard",
+                    "name": "余菁",
+                    "jid": "13817911600@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000978",
+                    "type": "xCard",
+                    "name": "胡建欣",
+                    "jid": "13761035325@neegle.net"
+                  }
+                ],
+                "type": "folder",
+                "name": "咨询"
+              }
+            ],
+            "type": "folder",
+            "name": "报税服务"
+          },
+          {
+            "id": "addsbook_item_0000000549",
+            "data": [
+              {
+                "id": "addsbook_item_0000000580",
+                "type": "xCard",
+                "name": "邓博轩",
+                "jid": "15270967796@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000596",
+                "type": "xCard",
+                "name": "江雪英",
+                "jid": "13184568166@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000606",
+                "type": "xCard",
+                "name": "刘婷",
+                "jid": "18607918621@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000616",
+                "type": "xCard",
+                "name": "罗卫梅",
+                "jid": "13037209600@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000646",
+                "type": "xCard",
+                "name": "王爱华",
+                "jid": "15079061789@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000674",
+                "type": "xCard",
+                "name": "吁永南",
+                "jid": "13207080809@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000686",
+                "type": "xCard",
+                "name": "张艳艳",
+                "jid": "13767053961@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000700",
+                "type": "xCard",
+                "name": "夏艳",
+                "jid": "15270974160@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000702",
+                "type": "xCard",
+                "name": "徐仕尹",
+                "jid": "18179155458@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000704",
+                "type": "xCard",
+                "name": "袁文",
+                "jid": "13065165121@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000705",
+                "type": "xCard",
+                "name": "吁永南",
+                "jid": "13207080809@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000707",
+                "type": "xCard",
+                "name": "吴芳",
+                "jid": "13767150014@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000968",
+                "type": "xCard",
+                "name": "夏萌萌",
+                "jid": "13047900899@neegle.net"
+              }
+            ],
+            "type": "folder",
+            "name": "江西分公司"
+          },
+          {
+            "id": "addsbook_item_0000000550",
+            "data": [
+              {
+                "id": "addsbook_item_0000000562",
+                "type": "xCard",
+                "name": "安童",
+                "jid": "13608565323@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000572",
+                "type": "xCard",
+                "name": "陈旭玮",
+                "jid": "13368697939@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000582",
+                "type": "xCard",
+                "name": "董俐",
+                "jid": "18508519463@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000694",
+                "type": "xCard",
+                "name": "蔡祖霖",
+                "jid": "18984114737@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000696",
+                "type": "xCard",
+                "name": "蒋萍",
+                "jid": "13984103281@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000970",
+                "type": "xCard",
+                "name": "钱艳玲",
+                "jid": "13985525773@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000972",
+                "type": "xCard",
+                "name": "欧生春",
+                "jid": "15086009137@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000974",
+                "type": "xCard",
+                "name": "袁凤琼",
+                "jid": "18111976054@neegle.net"
+              }
+            ],
+            "type": "folder",
+            "name": "贵阳分公司"
+          }
+        ],
+        "type": "folder",
+        "name": "服务中心"
+      },
+      {
+        "id": "addsbook_item_0000000544",
+        "data": [
+          {
+            "id": "addsbook_item_0000000553",
+            "data": [
+              {
+                "id": "addsbook_item_0000000568",
+                "type": "xCard",
+                "name": "曾玮",
+                "jid": "13916836676@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000574",
+                "type": "xCard",
+                "name": "陈义",
+                "jid": "15601877003@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000622",
+                "type": "xCard",
+                "name": "盘细平",
+                "jid": "15921078567@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000556",
+                "data": [
+                  {
+                    "id": "addsbook_item_0000000594",
+                    "type": "xCard",
+                    "name": "计轶轩",
+                    "jid": "18668073790@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000618",
+                    "type": "xCard",
+                    "name": "马加青",
+                    "jid": "15221535755@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000620",
+                    "type": "xCard",
+                    "name": "梅小青",
+                    "jid": "18602107867@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000634",
+                    "type": "xCard",
+                    "name": "陶冠华",
+                    "jid": "15618348535@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000640",
+                    "type": "xCard",
+                    "name": "涂笑",
+                    "jid": "18601753993@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000664",
+                    "type": "xCard",
+                    "name": "王文路",
+                    "jid": "13120909452@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000668",
+                    "type": "xCard",
+                    "name": "王欣润",
+                    "jid": "15221509827@neegle.net"
+                  }
+                ],
+                "type": "folder",
+                "name": "软件研发"
+              },
+              {
+                "id": "addsbook_item_0000000557",
+                "data": [
+                  {
+                    "id": "addsbook_item_0000000636",
+                    "type": "xCard",
+                    "name": "陶苑骋",
+                    "jid": "13818366330@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000652",
+                    "type": "xCard",
+                    "name": "王斐斐",
+                    "jid": "13681761749@neegle.net"
+                  },
+                  {
+                    "id": "addsbook_item_0000000670",
+                    "type": "xCard",
+                    "name": "吴林蔚",
+                    "jid": "13621630339@neegle.net"
+                  }
+                ],
+                "type": "folder",
+                "name": "软件测试"
+              }
+            ],
+            "type": "folder",
+            "name": "软件开发"
+          },
+          {
+            "id": "addsbook_item_0000000554",
+            "data": [
+              {
+                "id": "addsbook_item_0000000570",
+                "type": "xCard",
+                "name": "陈莉萍",
+                "jid": "13386082579@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000680",
+                "type": "xCard",
+                "name": "严跃红",
+                "jid": "13671577489@neegle.net"
+              },
+              {
+                "id": "addsbook_item_0000000682",
+                "type": "xCard",
+                "name": "姚莉萍",
+                "jid": "13795266117@neegle.net"
+              }
+            ],
+            "type": "folder",
+            "name": "办公室"
+          }
+        ],
+        "type": "folder",
+        "name": "公司本部"
+      }
+    ],
+    "type": "folder",
+    "name": "神计信息"
+  },
+  {
+    "id": "addsbook_0000000014",
+    "data": [
+      {
+        "id": "addsbook_item_0000000841",
+        "type": "xCard",
+        "name": "涂杰",
+        "jid": "18621333993@neegle.net"
+      },
+      {
+        "id": "addsbook_item_0000000843",
+        "type": "xCard",
+        "name": "宋韬",
+        "jid": "13311605550@neegle.net"
+      },
+      {
+        "id": "addsbook_item_0000000837",
+        "data": [
+          {
+            "id": "addsbook_item_0000000845",
+            "type": "xCard",
+            "name": "黄鑫",
+            "jid": "18101928491@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000847",
+            "type": "xCard",
+            "name": "董文凯",
+            "jid": "18939711447@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000849",
+            "type": "xCard",
+            "name": "唐晶",
+            "jid": "15901750580@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000851",
+            "type": "xCard",
+            "name": "钱文星",
+            "jid": "18017843080@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000853",
+            "type": "xCard",
+            "name": "程华东",
+            "jid": "13818801341@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000855",
+            "type": "xCard",
+            "name": "章高磊",
+            "jid": "13162021025@neegle.net"
+          }
+        ],
+        "type": "folder",
+        "name": "14届研究生"
+      },
+      {
+        "id": "addsbook_item_0000000838",
+        "data": [
+          {
+            "id": "addsbook_item_0000000857",
+            "type": "xCard",
+            "name": "洪琪",
+            "jid": "13162780108@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000859",
+            "type": "xCard",
+            "name": "李佳忻",
+            "jid": "18521560431@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000861",
+            "type": "xCard",
+            "name": "陆润梅",
+            "jid": "18083709783@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000863",
+            "type": "xCard",
+            "name": "邱起煌",
+            "jid": "18905935300@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000865",
+            "type": "xCard",
+            "name": "王国娟",
+            "jid": "15051963808@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000867",
+            "type": "xCard",
+            "name": "王丽雪",
+            "jid": "18217269143@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000869",
+            "type": "xCard",
+            "name": "王文豪",
+            "jid": "15800554364@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000871",
+            "type": "xCard",
+            "name": "朱佳翔",
+            "jid": "18721851829@neegle.net"
+          }
+        ],
+        "type": "folder",
+        "name": "15届研究生"
+      },
+      {
+        "id": "addsbook_item_0000000839",
+        "data": [
+          {
+            "id": "addsbook_item_0000000873",
+            "type": "xCard",
+            "name": "王潇男",
+            "jid": "18217412423@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000875",
+            "type": "xCard",
+            "name": "徐逸",
+            "jid": "15189706172@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000877",
+            "type": "xCard",
+            "name": "周振宇",
+            "jid": "13370312754@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000879",
+            "type": "xCard",
+            "name": "葛程",
+            "jid": "18616517276@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000881",
+            "type": "xCard",
+            "name": "高勇",
+            "jid": "13818435845@neegle.net"
+          },
+          {
+            "id": "addsbook_item_0000000883",
+            "type": "xCard",
+            "name": "汪建军",
+            "jid": "15800683715@neegle.net"
+          }
+        ],
+        "type": "folder",
+        "name": "16届研究生"
+      }
+    ],
+    "type": "folder",
+    "name": "神计研究生"
+  }
+]

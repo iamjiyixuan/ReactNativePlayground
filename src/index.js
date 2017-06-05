@@ -16,6 +16,7 @@ import Communication from './Communication'
 import ReactNativeElementsIndex from './ReactNativeElementsIndex'
 import Contacts from './Contacts'
 import EnterpriseAddressbook from './EnterpriseAddressbook'
+import EnterpriseAccountProfile from './EnterpriseAccountProfile'
 import News from './News'
 
 class Index extends React.Component {
@@ -126,6 +127,9 @@ const MyStackNavigator = StackNavigator({
   },
   EnterpriseAddressbook: {
     screen: EnterpriseAddressbook
+  },
+  EnterpriseAccountProfile: {
+    screen: EnterpriseAccountProfile
   },
   News: {
     screen: News

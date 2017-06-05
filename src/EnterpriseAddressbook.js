@@ -7,7 +7,8 @@ import {
     Text,
     Image,
     TouchableOpacity,
-    ScrollView
+    ScrollView,
+    Button
 } from 'react-native';
 
 class EnterpriseAddressbook extends React.Component {
@@ -20,12 +21,18 @@ class EnterpriseAddressbook extends React.Component {
         this.state = {
             collapsed: {}
         }
+
+        this._onPressProfile = this
+            ._onPressProfile
+            .bind(this);
     }
 
     render() {
         const data = require('./data.json');
+        const {navigate} = this.props.navigation;
         return (
             <ScrollView>
+                <Button title='Profile' onPress={this._onPressProfile}></Button>
                 <View style={styles.tree}>
                     {this._getTree('root', data)}
                 </View>
@@ -33,10 +40,16 @@ class EnterpriseAddressbook extends React.Component {
         );
     }
 
+    _onPressProfile() {
+        console.log('_onPressProfile');
+        const {navigate} = this.props.navigation;
+        navigate('EnterpriseAccountProfile')
+    }
+
     _getTree(type, data) {
         const nodes = [];
         for (const i = 0; i < data.length; i++) {
-            nodes.push(this._getNode(type, data[i]))
+            nodes.push(this._getNode(type, data[i]));
         }
         return nodes;
     }
@@ -58,7 +71,7 @@ class EnterpriseAddressbook extends React.Component {
                             : this._getNodeView(type, i, node)}
                     </TouchableOpacity>
                     <View style={styles.children}>
-                        {collapsed[type + i]
+                        {!collapsed[i]
                             ? null
                             : this._getTree('children', node.data || [])}
                     </View>
@@ -67,7 +80,7 @@ class EnterpriseAddressbook extends React.Component {
         } else {
             return (
                 <TouchableOpacity
-                    key={jid}
+                    key={i}
                     style={styles.contact}
                     onPress={() => this._onPressXCard(node)}>
                     <Image
@@ -85,10 +98,10 @@ class EnterpriseAddressbook extends React.Component {
     _getNodeView(type, i, node) {
         const {collapsed} = this.state;
         const hasChildren = !!node.data;
-        const iconStyle = collapsed[type + i]
+        const iconStyle = !collapsed[i]
             ? styles.iconX
             : styles.iconY;
-        const icon = collapsed[type + i]
+        const icon = !collapsed[i]
             ? require('../img/icon_folder_close.png')
             : require('../img/icon_folder_open.png');
         return (
@@ -110,13 +123,14 @@ class EnterpriseAddressbook extends React.Component {
     }
 
     _toggleState(type, i, node) {
-        const {collapsed} = this.state
-        const {onItemClicked} = this.props
+        const {collapsed} = this.state;
+        const {onItemClicked} = this.props;
 
-        collapsed[type + i] = !collapsed[type + i]
-        this.setState({collapsed: collapsed})
-        if (onItemClicked) 
-            onItemClicked(type, i, node)
+        collapsed[i] = !collapsed[i];
+        this.setState({collapsed: collapsed});
+        if (onItemClicked) {
+            onItemClicked(type, i, node);
+        }
     }
 
     _getStyle(type, tag) {
